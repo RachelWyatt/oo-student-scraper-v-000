@@ -46,7 +46,7 @@ class Scraper
 end
 
 
-#twitter 
+#twitter
 #linked in
 #facebook
 #github
