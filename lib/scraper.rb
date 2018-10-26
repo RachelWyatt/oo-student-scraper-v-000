@@ -31,7 +31,7 @@ class Scraper
     #    facebook =
     #    twitter = social.css(".social-icon").attribute("src").value
     #    bio = doc.css(".description-holder").first.text
-    # => quote = doc.css(".profile-quote").text
+    #    quote = doc.css(".profile-quote").text
 
       binding.pry
 
