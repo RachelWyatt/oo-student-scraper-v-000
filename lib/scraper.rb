@@ -17,6 +17,7 @@ class Scraper
           location: student_location,
           profile_url: student_profile_url
         }
+        scraped_students << scraped_student
       end
       end
       scraped_students
