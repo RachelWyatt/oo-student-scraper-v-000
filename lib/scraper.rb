@@ -40,7 +40,6 @@ class Scraper
       binding.pry
       scraped_students << scraped_student
     end
-    end
     @scraped_students
   end
 
