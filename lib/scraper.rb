@@ -27,11 +27,11 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open(profile_url))
     scraped_students = []
-    #doc.css("social-icon-container").each do |card|
+    #doc.css("social-icon-container").each do |social|
     #  card.css("social-icon").each do |student|
     #    linked_in =
     #    facebook =
-        twitter = social.css(".social-icon").attribute("src").value
+    #    twitter = social.css(".social-icon").attribute("src").value
     #  scraped_student = {
     #    name: student_name[0],
     #    location: student_location,
