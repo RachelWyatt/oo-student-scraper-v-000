@@ -28,28 +28,16 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
     scraped_students = []
     #doc.css("social-icon-container").each do |social|
-    #  card.css("social-icon").each do |student|
     #    linked_in =
     #    facebook =
     #    twitter = social.css(".social-icon").attribute("src").value
-    #  scraped_student = {
-    #    name: student_name[0],
-    #    location: student_location,
-    #    profile_url: student_profile_url
-      #}
+    #    bio = doc.css(".description-holder").first.text
+    # => quote = doc.css(".profile-quote").text
+
       binding.pry
-    #  scraped_students << scraped_student
-  #  end
+
 #  end
     @scraped_students
   end
 
 end
-
-
-#twitter
-#linked in
-#facebook
-#github
-#bio    doc.css(".description-holder").first.text
-#quote  doc.css(".profile-quote").text
