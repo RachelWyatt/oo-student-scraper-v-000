@@ -35,8 +35,6 @@ class Scraper
 
       binding.pry
 
-#  end
-    @scraped_students
   end
 
 end
