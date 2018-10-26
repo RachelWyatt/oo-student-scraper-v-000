@@ -30,8 +30,8 @@ class Scraper
     #doc.css("social-icon-container").each do |card|
     #  card.css("social-icon").each do |student|
     #    linked_in =
-    #    facebook = 
-    #    twitter = 
+    #    facebook =
+    #    twitter =
     #  scraped_student = {
     #    name: student_name[0],
     #    location: student_location,
