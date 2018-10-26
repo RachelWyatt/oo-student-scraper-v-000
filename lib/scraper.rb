@@ -27,7 +27,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open(profile_url))
     scraped_students = []
-    #doc.css("div.roster-cards-container").each do |card|
+    doc.css("social-icon-container").each do |card|
     #  card.css("div.student-card a").each do |student|
     #    student_name = student.css(".student-name").first.text,
     #    student_location = student.css(".student-location").text,
@@ -39,7 +39,7 @@ class Scraper
       #}
       binding.pry
       scraped_students << scraped_student
-    #end
+    end
     @scraped_students
   end
 
