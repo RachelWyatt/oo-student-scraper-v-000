@@ -17,7 +17,7 @@ class Scraper
           location: student_location,
           profile_url: student_profile_url
         }
-        #binding.pry
+        binding.pry
         scraped_students << scraped_student
       end
       end
