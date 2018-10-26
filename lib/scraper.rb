@@ -27,6 +27,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open(profile_url))
     scraped_students = []
+
     #    linked_in =
     #    facebook =
     #    twitter = social.css(".social-icon").attribute("src").value
