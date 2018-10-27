@@ -24,7 +24,7 @@ class Scraper
     end
 
   def self.scrape_profile_page(profile_url)
-    doc = Nokogiri::HTML(open(profile_url))
+    profile_page = Nokogiri::HTML(open(profile_url))
     scraped_students = []
     links = profile_page.css(".social-icon-container").children.css("a").map { |el| el.attribute('href').value} #map over the array of 'a' tag objects and return just the attribute 'href' value
         binding.pry
