@@ -26,9 +26,9 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     profile_page = Nokogiri::HTML(open(profile_url))
     scraped_students = []
+    student = {}
     links = profile_page.css(".social-icon-container").children.css("a").map { |el| el.attribute('href').value} #map over the array of 'a' tag objects and return just the attribute 'href' value
       links.each do |link|
-        student = {}
         if link.include?("linkedin")
           student[:linkedin] = link
         elsif link.include?("github")
