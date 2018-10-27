@@ -43,14 +43,9 @@ class Scraper
     student[:profile_quote] = profile_page.css(".profile-quote").text if profile_page.css(".profile-quote")
     student[:bio] = profile_page.css("div.bio-content.content-holder div.description-holder p").text if profile_page.css("div.bio-content.content-holder div.description-holder p")
     scraped_students << student
-    binding.pry
+    #binding.pry
   end
 
-    #    linked_in =
-    #    facebook =
-    #    twitter = social.css(".social-icon").attribute("src").value
-    #    bio = doc.css(".description-holder").first.text
-    #    quote = doc.css(".profile-quote").text
 
 
   end
