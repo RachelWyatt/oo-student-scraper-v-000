@@ -30,9 +30,9 @@ class Scraper
 
       links.each do |link|
         if link.include?("linkedin")
-          linkedin: link
+          linkedin = link
         elsif link.include?("twitter")
-          twitter: link
+          twitter = link
         end
       #now use conditionals to check if the link has a certain string (like 'linkedin') and if it does set key value pairs in student hash
     end
