@@ -27,8 +27,9 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
     scraped_students = []
     links = profile_page.css(".social-icon-container").children.css("a").map { |el| el.attribute('href').value} #map over the array of 'a' tag objects and return just the attribute 'href' value
-      links.each do |link|
         binding.pry
+      links.each do |link|
+
         #if link.include?("linkedin")
         #  linkedin:
       #now use conditionals to check if the link has a certain string (like 'linkedin') and if it does set key value pairs in student hash
