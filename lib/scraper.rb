@@ -40,7 +40,5 @@ class Scraper
     #    bio = doc.css(".description-holder").first.text
     #    quote = doc.css(".profile-quote").text
 
-      binding.pry
 
   end
-
