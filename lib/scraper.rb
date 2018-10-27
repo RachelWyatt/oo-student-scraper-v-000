@@ -38,7 +38,7 @@ class Scraper
         else
           student[:blog] = link
         end
-        scraped_students << scraped_student
+        scraped_students << student
       #now use conditionals to check if the link has a certain string (like 'linkedin') and if it does set key value pairs in student hash
     end
     scraped_students
