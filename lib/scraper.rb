@@ -33,6 +33,7 @@ class Scraper
           linkedin: 
       #now use conditionals to check if the link has a certain string (like 'linkedin') and if it does set key value pairs in student hash
     end
+  end
     #    linked_in =
     #    facebook =
     #    twitter = social.css(".social-icon").attribute("src").value
