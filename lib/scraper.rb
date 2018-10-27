@@ -31,6 +31,7 @@ class Scraper
       links.each do |link|
         if link.include?("linkedin")
           linkedin = link
+        end
         if link.include?("twitter")
           twitter = link
         end
