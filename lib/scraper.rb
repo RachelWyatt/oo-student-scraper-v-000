@@ -29,8 +29,8 @@ class Scraper
     links = profile_page.css(".social-icon-container").children.css("a").map { |el| el.attribute('href').value} #map over the array of 'a' tag objects and return just the attribute 'href' value
       links.each do |link|
         binding.pry
-        if link.include?("linkedin")
-          linkedin: 
+        #if link.include?("linkedin")
+        #  linkedin:
       #now use conditionals to check if the link has a certain string (like 'linkedin') and if it does set key value pairs in student hash
     end
   end
