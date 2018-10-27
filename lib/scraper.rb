@@ -38,6 +38,7 @@ class Scraper
           linkedin: linkedin,
           twitter: twitter
         }
+        scraped_students << scraped_student
       #now use conditionals to check if the link has a certain string (like 'linkedin') and if it does set key value pairs in student hash
     end
   end
