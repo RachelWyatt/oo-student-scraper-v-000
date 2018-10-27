@@ -34,6 +34,10 @@ class Scraper
         elsif link.include?("twitter")
           twitter = link
         end
+        scraped_student = {
+          linkedin: linkedin,
+          twitter: twitter
+        }
       #now use conditionals to check if the link has a certain string (like 'linkedin') and if it does set key value pairs in student hash
     end
   end
